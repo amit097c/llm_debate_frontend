@@ -27,9 +27,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [ 
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -65,7 +68,7 @@
               "buildTarget": "chatbot:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development"    
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "df4fa90f-6de0-4e9e-b26c-5d8312da9985"
   }
 }

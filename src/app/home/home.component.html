@@ -1,0 +1,16 @@
+<div class="landing-page">  
+    <main class="hero">
+      <div class="badge">LLM plugged debating expereince</div>
+      <h1>LLM Debate Areana</h1>
+      <p>
+        Enter a topic, select the mode and commence the debate
+      </p>
+  
+      <div class="input-component">
+         <app-input (addDebateTopicEmitter)="handleAddDebateTopic($event)"></app-input>
+      </div>
+      <div class="buttons">
+        <button class="btn-primary" [disabled]="isButtonDisabled()" (click)="fetchData(topic)">Trudeau vs Trump</button>
+      </div>
+    </main>
+  </div>
