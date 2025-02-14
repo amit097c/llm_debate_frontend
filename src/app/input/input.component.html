@@ -1,0 +1,14 @@
+<label for="addTopicInput">Shoot your debate Topic</label>
+<div class="input-container">
+    <input
+      #topic
+      placeholder="Enter a debate topic"
+      (input)="onInputChange(topic.value)"
+      class="text_input"
+      id="addTopicInput"/>
+</div>
+
+
+<!--(keyup.enter)="add_topic(topic.value);topic.value=''"
+
+<button class="btn-primary" (click)="add_topic(topic.value)">Enter</button>-->
